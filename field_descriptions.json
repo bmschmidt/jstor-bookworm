@@ -1,0 +1,14 @@
+[
+    {"field":"searchstring","datatype":"searchstring","type":"text","unique":true},
+    {"field":"pagecount","datatype":"categorical","type":"integer","unique":true},
+    {"field":"journaltitle","datatype":"categorical","type":"character","unique":true},
+    {"field":"authors","datatype":"categorical","type":"character","unique":true},
+    {"field":"type","datatype":"categorical","type":"character","unique":true},
+    {"field":"number","datatype":"integer","type":"integer","unique":true},
+    {"field":"volume","datatype":"integer","type":"integer","unique":true},
+    {"field":"paper","datatype":"categorical","type":"character","unique":true},
+    {"field":"publication","datatype":"time","type":"character","unique":true,"derived":[
+       {"resolution":"year"},
+       {"resolution":"month"}
+    ]}
+]
