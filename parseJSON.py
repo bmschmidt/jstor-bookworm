@@ -20,8 +20,7 @@ for file in sys.argv[1:]:
         del metadata['doi']
         catalog.write(json.dumps(metadata) + "\n")
         for key in metadata.keys():
-            if key.match("-date"):
-                metadata[key.replace("-date","")] = metadata[key]
+            metadata[key.replace("-date","")] = metadata[key]
                 
         if rewriteWordcounts:
             for line in data['data']['1-grams']:

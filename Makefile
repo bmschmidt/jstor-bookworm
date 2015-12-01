@@ -1,6 +1,6 @@
 
 
-foldername:=DFR-59_2015-03-04T16-57-43.322923
+foldername:=jstordump
 
 
 
